@@ -1,8 +1,8 @@
 import {Component} from "@angular/core";
 import {Localizacao} from "../model/localizacao.model";
-import {HttpClientService} from "../http-client.service";
 import {ActivatedRoute} from "@angular/router";
 import {PesquisaDominioService} from "../pesquisa-dominio.service";
+import {HistoricoService} from "../historico.service";
 
 
 @Component({
@@ -14,17 +14,20 @@ export class MapPageComponent {
 
     localizacao: any = new Localizacao();
 
-    constructor(private httpClient: HttpClientService, private pesquisa:PesquisaDominioService, private route: ActivatedRoute) {
+    constructor(private historicoService: HistoricoService, private pesquisa:PesquisaDominioService, private route: ActivatedRoute) {
     }
 
     exibirLocalizacao(localizacao: Localizacao): void {
         this.localizacao = localizacao;
 
-        this.httpClient
-            .post('http://localhost:3000/api/localizacao', localizacao)
-            .subscribe((localizacao) => {
+        this.historicoService
+            .salvarHistorico(localizacao)
+            .subscribe(
+                (doc) => {
 
-            });
+                },
+                (error) => console.error(error)
+            );
     }
 
     ngOnInit() {
@@ -42,5 +45,4 @@ export class MapPageComponent {
                 );
         }
     }
-
 }

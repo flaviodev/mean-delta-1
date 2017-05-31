@@ -16,6 +16,7 @@ import {MapPageComponent} from './map-page/map-page.component';
 import {HistoricoPageComponent} from './historico-page/historico-page.component';
 import {Localizacao} from "./model/localizacao.model";
 import {PesquisaDominioService} from "./pesquisa-dominio.service";
+import {HistoricoService} from "./historico.service";
 
 export const rotas: Routes = [
     {path: '', redirectTo: 'map', pathMatch: 'full'},
@@ -44,7 +45,7 @@ export const rotas: Routes = [
         })
     ],
     providers: [
-        HttpClientService, PesquisaDominioService
+        HttpClientService, PesquisaDominioService, HistoricoService
     ],
     bootstrap: [AppComponent]
 })

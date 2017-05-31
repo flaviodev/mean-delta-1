@@ -17,7 +17,7 @@ export class SearchBarComponent implements OnInit {
     @Output()
     localizacao: EventEmitter<Localizacao> = new EventEmitter<Localizacao>();
 
-    constructor(private pesquisa: PesquisaDominioService, private route: ActivatedRoute) {
+    constructor(private pesquisaService: PesquisaDominioService, private route: ActivatedRoute) {
     }
 
     ngOnInit() {
@@ -28,7 +28,7 @@ export class SearchBarComponent implements OnInit {
 
     pesquisar(): void {
 
-        this.pesquisa
+        this.pesquisaService
             .pesquisarDominio(this.dominio)
             .subscribe(
                 (data: Localizacao) => {

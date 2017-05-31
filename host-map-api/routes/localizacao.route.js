@@ -26,11 +26,26 @@ router.get('/', (req, res, next) => {
 });
 
 router.put('/', (req, res, next) => {
-    res.status(200).json({ nome: "Átilla" });
+    let localizacao = new Localizacao(req.body);
+
+    LocalizacaoService
+        .atualizar(localizacao)
+        .then((doc) => {
+            res.status(200).json(doc);
+        }, (err) => {
+            res.status(500).json(err);
+        });
 });
 
-router.delete('/', (req, res, next) => {
-    res.status(200).json({ nome: "Átilla" });
+router.delete('/:id', (req, res, next) => {
+
+    LocalizacaoService
+        .excluir(req.params.id)
+        .then((doc) => {
+            res.status(200).json(doc);
+        }, (err) => {
+            res.status(500).json(err);
+        });
 });
 
 module.exports = router;
