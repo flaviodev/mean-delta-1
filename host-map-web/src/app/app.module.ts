@@ -14,10 +14,13 @@ import {MenuTopComponent} from './menu-top/menu-top.component';
 import {Routes, RouterModule} from "@angular/router";
 import {MapPageComponent} from './map-page/map-page.component';
 import {HistoricoPageComponent} from './historico-page/historico-page.component';
+import {Localizacao} from "./model/localizacao.model";
+import {PesquisaDominioService} from "./pesquisa-dominio.service";
 
 export const rotas: Routes = [
-    {path: '', redirectTo: '/map', pathMatch: 'full'},
+    {path: '', redirectTo: 'map', pathMatch: 'full'},
     {path: 'map', component: MapPageComponent},
+    {path: 'map/:dominio', component: MapPageComponent},
     {path: 'historico', component: HistoricoPageComponent}
 ];
 
@@ -41,7 +44,7 @@ export const rotas: Routes = [
         })
     ],
     providers: [
-        HttpClientService
+        HttpClientService, PesquisaDominioService
     ],
     bootstrap: [AppComponent]
 })
