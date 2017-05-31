@@ -655,7 +655,7 @@
       <workItem from="1495893244505" duration="14930000" />
       <workItem from="1496183527754" duration="487000" />
       <workItem from="1496184048391" duration="1867000" />
-      <workItem from="1496187308652" duration="32226000" />
+      <workItem from="1496187308652" duration="32236000" />
     </task>
     <task id="LOCAL-00001" summary="Trabalho em Grupo:&#10;- Fazer FORK de https://github.com/atilla8huno/mean-delta&#10;- Implementar um botão azul (bootstrap) na tela de Histórico, para cada registro da lista&#10;- O botão deve fazer a aplicação navegar através de rotas até a página de Consulta de Domínios (Mapa)&#10;- Ao entrar na página, a consulta pelo domínio/IP deve ser realizada automaticamente para o registro selecionado no histórico&#10;- O domínio/IP deve ser passado por parâmetro ao navegar da tela de Histórico para a tela de Mapa">
       <created>1496268877225</created>
@@ -678,11 +678,18 @@
       <option name="project" value="LOCAL" />
       <updated>1496274118595</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Trabalho Final Individual:&#10;- Fazer FORK de https://github.com/atilla8huno/mean-delta&#10;- Implementar um botão vermelho (bootstrap) na tela de Histórico, para cada registro da lista&#10;- O botão deve realizar a exclusão do registro selecionado fazendo uma requisição HTTP (Method DELETE) para o backend&#10;- Deve ser implementado no backend (host-map-api) a respectivo API para receber o ID do registro selecionado por parâmetro&#10;- A API deve excluir o registro passando o ID para o Service, que por sua vez deve excluir o registro no MongoDB usando o Mongoose (igual demais exemplos)&#10;- Ao retornar da requisição HTTP para o callback de sucesso (Observable, subscribe), o registro selecionado/excluído deve ser removido da lista na tela (Array &gt; splice)">
+      <created>1496274131092</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1496274131092</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51416000" />
+    <option name="totallyTimeSpent" value="51426000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
