@@ -17,17 +17,20 @@ export class MapPageComponent {
     constructor(private historicoService: HistoricoService, private pesquisa:PesquisaDominioService, private route: ActivatedRoute) {
     }
 
-    exibirLocalizacao(localizacao: Localizacao): void {
+    exibirLocalizacao(localizacao: Localizacao, isConsulta: boolean = false): void {
         this.localizacao = localizacao;
 
-        this.historicoService
-            .salvarHistorico(localizacao)
-            .subscribe(
-                (doc) => {
+        if(!isConsulta) {
 
-                },
-                (error) => console.error(error)
-            );
+            this.historicoService
+                .salvarHistorico(localizacao)
+                .subscribe(
+                    (doc) => {
+
+                    },
+                    (error) => console.error(error)
+                );
+        }
     }
 
     ngOnInit() {
@@ -39,7 +42,7 @@ export class MapPageComponent {
                 .subscribe(
                     (data:Localizacao) => {
                         data.dominio = _dominio;
-                        this.exibirLocalizacao(data);
+                        this.exibirLocalizacao(data, true);
                     },
                     (error) => console.error(error)
                 );

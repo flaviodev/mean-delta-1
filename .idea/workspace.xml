@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9b7c50d2-33ef-4f7a-bb1f-7573b2e4dde8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/host-map-web/src/app/map-page/map-page.component.ts" afterPath="$PROJECT_DIR$/host-map-web/src/app/map-page/map-page.component.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,8 +27,8 @@
       <file leaf-file-name="map-page.component.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/host-map-web/src/app/map-page/map-page.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
-              <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+            <state relative-caret-position="411">
+              <caret line="42" column="43" lean-forward="true" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -80,8 +81,8 @@
       <file leaf-file-name="search-bar.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/host-map-web/src/app/search-bar/search-bar.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="41" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+            <state relative-caret-position="523">
+              <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -655,7 +656,7 @@
       <workItem from="1495893244505" duration="14930000" />
       <workItem from="1496183527754" duration="487000" />
       <workItem from="1496184048391" duration="1867000" />
-      <workItem from="1496187308652" duration="32236000" />
+      <workItem from="1496187308652" duration="32676000" />
     </task>
     <task id="LOCAL-00001" summary="Trabalho em Grupo:&#10;- Fazer FORK de https://github.com/atilla8huno/mean-delta&#10;- Implementar um botão azul (bootstrap) na tela de Histórico, para cada registro da lista&#10;- O botão deve fazer a aplicação navegar através de rotas até a página de Consulta de Domínios (Mapa)&#10;- Ao entrar na página, a consulta pelo domínio/IP deve ser realizada automaticamente para o registro selecionado no histórico&#10;- O domínio/IP deve ser passado por parâmetro ao navegar da tela de Histórico para a tela de Mapa">
       <created>1496268877225</created>
@@ -685,11 +686,18 @@
       <option name="project" value="LOCAL" />
       <updated>1496274131092</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Trabalho Final Individual:&#10;- Fazer FORK de https://github.com/atilla8huno/mean-delta&#10;- Implementar um botão vermelho (bootstrap) na tela de Histórico, para cada registro da lista&#10;- O botão deve realizar a exclusão do registro selecionado fazendo uma requisição HTTP (Method DELETE) para o backend&#10;- Deve ser implementado no backend (host-map-api) a respectivo API para receber o ID do registro selecionado por parâmetro&#10;- A API deve excluir o registro passando o ID para o Service, que por sua vez deve excluir o registro no MongoDB usando o Mongoose (igual demais exemplos)&#10;- Ao retornar da requisição HTTP para o callback de sucesso (Observable, subscribe), o registro selecionado/excluído deve ser removido da lista na tela (Array &gt; splice)">
+      <created>1496274141250</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1496274141250</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51426000" />
+    <option name="totallyTimeSpent" value="51866000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -708,7 +716,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19756839" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24960254" sideWeight="0.50653595" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1102,14 +1110,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/host-map-web/src/app/search-bar/search-bar.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="41" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/host-map-web/src/app/historico.service.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -1130,10 +1130,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/host-map-web/src/app/map-page/map-page.component.ts">
+    <entry file="file://$PROJECT_DIR$/host-map-web/src/app/search-bar/search-bar.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="523">
-          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/host-map-web/src/app/map-page/map-page.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="42" column="43" lean-forward="true" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
